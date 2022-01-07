@@ -1,4 +1,4 @@
-#README
+# README
 I created this Full-Stack project by myself to e-commerce company.
 This repository shows small example files from the application, to get an idea how it is implemented. Unfortunately I can't reveal whole source code, because it is not my property.
 
