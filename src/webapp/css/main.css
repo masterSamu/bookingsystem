@@ -1,0 +1,262 @@
+
+
+html, body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #E3F4F3;
+}
+
+/* Navbar styles  */
+.navbar {
+    position: static;
+    background-color: #B1BBFF;
+    margin: 0;
+    display: flex;
+    width: 100%;
+}
+.col-first {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-left: 15px;
+}
+.col-middle {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+.col-last {
+    display: flex;
+    align-items: flex-end;
+    margin-right: 15px;
+}
+
+.navbar a {
+    margin: 0 2% 0 2%;
+    opacity: 0.8;
+    transition: transform 1s ease;
+    color: black;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    transform: scale(1.2);
+    opacity: 1;
+}
+
+.navbar-icon {
+	position: relative;
+	top: 0.2em;
+	font-size: 1.1rem;
+	font-weight: bold;
+	border: 2px solid black;
+	border-radius: 365px;
+	padding: 7px 14px;
+}
+
+
+/* Container styles  */
+
+.main-container {
+    max-width: 1750px;
+}
+
+
+.haku-container, .tuote-container {
+    position: relative;
+    background-color: #FFFFFF;
+    width: 95%;
+    margin: 0.5% auto;
+    border-radius: 25px;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+}
+
+.haku-container {
+	margin-bottom: 10px;
+}
+
+.header-container {
+    display: flex;
+    margin: 1% auto;
+    width: 95%;
+    position: relative;
+}
+
+
+.header-container > .col-right, .header-container > .col-left {
+    align-self: center;
+}
+
+.header-container > .col-right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.page-header {
+    position: absolute;
+    top: -30%;
+}
+
+.container-header {
+    margin: 1% 0 0 1%;
+}
+
+.info-circle {
+	opacity: 0.8;
+	width: 30px;
+	height: 30px;
+}
+
+
+.tooltip-info {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  display: inline-block;
+}
+
+/* Tooltip text */
+.tooltip-info .tooltiptext {
+  visibility: hidden;
+  width: 700px;
+  max-height: 500px;
+  overflow-y: auto;
+  text-align: left;
+  background-color: #f4f4f8;
+  color: black;
+  border: 2px solid #F4B1FF;
+  border-radius: 12px;
+  padding: 10px;
+
+  position: absolute;
+  top: -10px;
+  right: 105%;
+  z-index: 3;
+}
+
+.tooltip-info:hover .tooltiptext {
+  visibility: visible;
+}
+
+.tooltip-header {
+	font-weight: bold;
+}
+
+.tooltip li {
+	margin-bottom: 5px;
+}
+
+/* Button styles */
+
+.btn {
+    border: 1px solid #000000;
+    border-radius: 12px;
+}
+
+.upper-btn {
+    background: #F4B1FF;
+}
+
+.btn-blue {
+    background-color: #B1CCFF;
+}
+
+.btn-save, .btn-delete, .btn-blue {
+    width: 120px;
+    margin-bottom: 10px;
+}
+
+.btn-save {
+    background-color: #8DFF83;
+}
+
+.btn-delete {
+    background-color: #FF9B9B;
+}
+
+
+
+.success {
+	color: green;
+}
+
+.message-div {
+	width: fit-content;
+	margin: 0 auto;
+	padding: 5px;
+}
+
+.error {
+	color: #f35f5f;
+	font-weight: bold;
+	padding: 5% 0% 5% 0%;
+}
+
+.errorMsg {
+	color: #f35f5f;
+	font-weight: bold;
+}
+
+.warning {
+	color: #FFAA1D;
+	font-weight: bold;
+}
+
+.hide {
+	visibility: hidden;
+	display: none;
+}
+
+.inputFieldError {
+	border: 3px dashed #f35f5f;
+}
+
+.inputFieldWarning {
+	border: 3px dashed #FFAA1D;
+}
+
+@media (max-width: 768px) {
+    .col-middle a{
+        margin: 0% 3% 0% 3%;
+     }
+     .tooltip-info .tooltiptext {
+	  width: 300px;
+	  max-height: 400px;
+	}
+}
+
+@media (max-width: 520px) {
+	
+    .col-middle {
+        display: none;
+     }
+     
+     .tooltip-info .tooltiptext {
+	  width: 240px;
+	  max-height: 300px;
+	  top: -10px;
+	  right: 105%;
+	}
+	
+
+}
+
+@media (max-width: 370px) {
+	.header-container {
+		flex-direction: column;
+	}
+}
+
+@media (max-width: 320px) {
+	.header-container {
+		flex-direction: column;
+	}
+    .btn-save, .btn-delete, .btn-blue {
+        width: 80px;
+    }
+    
+    .tooltip-info .tooltiptext {
+	  width: 200px;
+	  max-height: 275px;
+	}
+}
