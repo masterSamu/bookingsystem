@@ -7,9 +7,8 @@ This repository shows small example files from the application, to get an idea h
 Main learnings from this project is, that good planning is already half way done. I also learned to deploy application to Google App Engine, and use of Cloud SQL. And how to keep running expenses as low as possible. I feel that my documentation reading capability increased a lot during this project.
 
 # Tech used
-- Java (Servlets)
+- Java (Servlets, JPA, JSP)
 - MySQL
-- JPA
 - JavaScript & JQuery
 - HTML & CSS
 - Bootstrap
