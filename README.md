@@ -2,7 +2,8 @@
 I created this Full-Stack project by myself to e-commerce company.
 
 My client has an online shop and she received a lot of booking requests for products from customers via email or Facebook. She needed a system to store those bookings.
-This repository shows small example files from the application, to get an idea how it is implemented.
+
+This repository shows small example files from the application, to get an idea how it is implemented. Unfortunately I can't reveal whole source code, because it is not my property.
 
 Main learnings from this project is, that good planning is already half way done. I also learned to deploy application to Google App Engine, and use of Cloud SQL. And how to keep running expenses as low as possible. I feel that my documentation reading capability increased a lot during this project.
 
