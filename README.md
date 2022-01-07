@@ -1,14 +1,16 @@
 # bookingsystem
 Booking system for online shop.
 
-My client has an online shop and she received a lot of booking requests for products from customers via email or facebook. She needed a system to store those bookings.
+My client has an online shop and she received a lot of booking requests for products from customers via email or Facebook. She needed a system to store those bookings.
+This repository shows small example files from the application, to get an idea how it is implemented.
 
-# Techs used
+# Tech used
 - Java (Servlets)
 - MySQL
 - JPA
-- JavaScript, (JQuery)
-- HTML, CSS, (JSP)
+- JavaScript & JQuery
+- HTML & CSS
+- Bootstrap
 - Google App Engine
 - Google Cloud SQL
 
