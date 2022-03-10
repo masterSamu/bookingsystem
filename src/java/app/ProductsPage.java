@@ -8,24 +8,23 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import data.BookingsInformation;
+import data.ProductsWithSuppliers;
 import appUtilities.*;
 
-@WebServlet("/varaukset")
-public class BookingsPage extends HttpServlet {
+@WebServlet("/tuotteet")
+public class ProductsPage extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
-	public BookingsPage() {
+	public ProductsPage() {
 		super();
 	}
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
+		ArrayList<ProductsWithSuppliers> pwsList = ProductUtilities.getAllProductsWithSuppliers();
+		request.setAttribute("products", pwsList);
 
-		ArrayList<BookingsInformation> bookings = ReadBookingUtilities.getAllBookings();
-		request.setAttribute("bookings", bookings);
-
-		RequestDispatcher rd = request.getRequestDispatcher("/jsp/bookings-page.jsp");
+		RequestDispatcher rd = request.getRequestDispatcher("/jsp/show-products-page.jsp");
 		try {
 			rd.forward(request, response);
 		} catch (ServletException e) {

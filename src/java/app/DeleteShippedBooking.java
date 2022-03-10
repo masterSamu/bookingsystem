@@ -1,39 +1,29 @@
 package app;
 
 import java.io.IOException;
-import java.util.ArrayList;
-import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import data.BookingsInformation;
-import appUtilities.*;
 
-@WebServlet("/varaukset")
-public class BookingsPage extends HttpServlet {
+import appUtilities.BookingUtilities;
+
+@WebServlet("/deleteshippedbooking")
+public class DeleteShippedBooking extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
-	public BookingsPage() {
+	public DeleteShippedBooking() {
 		super();
 	}
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
+		String id = request.getParameter("id");
 
-		ArrayList<BookingsInformation> bookings = ReadBookingUtilities.getAllBookings();
-		request.setAttribute("bookings", bookings);
+		BookingUtilities.deleteSingleShippedBooking(id);
 
-		RequestDispatcher rd = request.getRequestDispatcher("/jsp/bookings-page.jsp");
-		try {
-			rd.forward(request, response);
-		} catch (ServletException e) {
-			e.printStackTrace();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-
+		response.sendRedirect("/toimitetut-varaukset");
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)

@@ -1,31 +1,32 @@
 package app;
 
 import java.io.IOException;
-import java.util.ArrayList;
+import java.util.List;
+
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import data.BookingsInformation;
-import appUtilities.*;
+import data.Suppliers;
+import appUtilities.SuppliersUtilities;
 
-@WebServlet("/varaukset")
-public class BookingsPage extends HttpServlet {
+@WebServlet("/lisaatuotesivu")
+public class AddProductPage extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
-	public BookingsPage() {
+	public AddProductPage() {
 		super();
 	}
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
+		List<Suppliers> suppliers = SuppliersUtilities.getAllSuppliers();
 
-		ArrayList<BookingsInformation> bookings = ReadBookingUtilities.getAllBookings();
-		request.setAttribute("bookings", bookings);
+		request.setAttribute("suppliers", suppliers);
 
-		RequestDispatcher rd = request.getRequestDispatcher("/jsp/bookings-page.jsp");
+		RequestDispatcher rd = request.getRequestDispatcher("/jsp/addproduct.jsp");
 		try {
 			rd.forward(request, response);
 		} catch (ServletException e) {
