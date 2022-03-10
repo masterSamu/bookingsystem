@@ -1,0 +1,137 @@
+
+.inner-container {
+    padding: 5%;
+}
+
+.tuote-container {
+	padding: 2%;
+}
+
+.customer-container, .product-container, .booking-container {
+	border: 1px solid #D3D3D3;
+    border-radius: 12px;
+    padding: 2%;
+    margin-bottom: 15px;
+}
+.tuotekuva {
+    height: 250px;
+    width: auto;
+    margin: 0 auto;
+}
+
+.product-image-booking {
+	height: 225px;
+    width: auto;
+    margin: 0 auto;
+}
+
+.btn {
+    margin: 15px 10px 10px 10px;
+}
+
+.submit-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.submit-col-l, .submit-col-r {
+    display: flex;
+    padding: 0;
+}
+
+.submit-col-l {
+    justify-content: flex-start;
+    margin-right: 10%;
+    
+}
+.submit-col-r {
+    justify-content: flex-end;
+}
+
+.col-booking-info {
+	display: flex;
+	align-items: center;
+}
+
+.supplier-list {
+	max-height: 200px;
+	overflow-y: auto;
+}
+
+.label-input {
+    font-weight: bold;
+    padding: 3px;
+}
+
+.informed-checkbox {
+	height: 30px;
+	width: 30px;
+}
+
+.input-amount {
+	margin-left: 5px;
+    font-size: large;
+    width: 60px;
+}
+
+.div-toimittajat {
+    display: grid;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    overflow-y: auto;
+    max-height: 120px;
+}
+
+.label-toimittaja {
+    margin: 5px 0 0 10px;
+}
+
+input[name="toimittaja"] {
+    height: 20px;
+    width: 20px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+#amount-product {
+	max-height: 30px;
+	max-width: 60px;
+}
+
+
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 992px) {
+}
+
+@media (max-width: 768px) {
+    
+    .tuote-right-column, .tuote-left-column, .tuote-right-column-booking, .tuote-left-column-booking {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .tuote-right-column {
+        flex-direction: column-reverse;
+    }
+}
+
+@media (max-width: 576px) {
+}
+
+@media (max-width: 492px) {
+
+    .tuotekuva {
+        max-height: 200px;
+    }
+}
+@media (max-width: 392px) {
+}
+
+@media (max-width: 320px) {
+}

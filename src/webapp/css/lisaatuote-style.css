@@ -1,0 +1,68 @@
+.main-container {
+    max-width: 600px;
+}
+
+.inner-container {
+    padding: 5%;
+}
+
+
+.row, .submit-row {
+    margin: 10px auto;
+    max-width: 95%;
+}
+
+
+.label-input {
+    font-weight: bold;
+}
+
+.div-toimittajat {
+    display: grid;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    overflow-y: scroll;
+    max-height: 90px;
+}
+
+.label-toimittaja {
+    margin: 5px 0 0 10px;
+}
+
+.submit-row {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+
+
+
+
+@media (max-width: 1200px) {
+   
+}
+
+@media (max-width: 992px) {
+
+
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 576px) {
+
+}
+
+@media (max-width: 492px) {
+
+}
+@media (max-width: 392px) {
+
+}
+
+@media (max-width: 320px) {
+ 
+}

@@ -1,0 +1,179 @@
+
+.tuote-container {
+	margin-top: 0;
+}
+
+.form-header {
+    padding: 10px;
+}
+
+
+.left-container, .right-container {
+    margin: 0px;
+    border: 1px solid #D3D3D3;
+    border-radius: 12px;
+    padding: 2%;
+    overflow-y: auto;
+}
+
+.product-right-column {
+    display: flex;
+    justify-content: center;
+}
+
+.label-input {
+    font-weight: bold;
+}
+
+.ul-booking {
+	height: 40vh !important;
+	overflow-y: auto;
+}
+
+.ul-booking li:hover, .ul-supplierlist li:hover {
+    background-color: #fff9e6;
+}
+
+#search-list-input-customers, #search-list-input-products {
+	margin-bottom: 10px;
+	height: 35px;
+}
+
+#search-list-input-customers:focus, #search-list-input-products:focus {
+	background-color: #fff9e6;
+}
+
+input[name='checkbox-customers'], input[name='checkbox-products'], input[name="toimittaja"] {
+    height: 20px;
+    width: 20px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.ul-booking, .ul-new-product li {
+    list-style-type: none;
+}
+
+.ul-booking li, .ul-new-product li {
+	padding-top: 5px;
+}
+
+.ul-booking span, .ul-new-product span {
+	cursor: pointer;
+    padding: 0 5px 0 5px;
+}
+
+.ul-new-product {
+	height: 324px;
+}
+
+.li-element-hr {
+	position: relative;
+	top: 9px;
+}
+
+.ul-booking-elements, .ul-booking-elements-customers, .ul-booking-elements-products {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.container-fname, .container-lname, .container-email, .container-input-amount, .container-product-name {
+	display: flex;
+	align-items: center;
+	word-break: break-all;
+}
+
+.container-input-amount {
+
+	justify-content: flex-end;
+	position: relative;
+	right: 0px;
+}
+
+.container-product-name {
+	width: 50%;
+	justify-items: flex-end; 
+}
+
+.container-fname, .container-lname, .container-email {
+	justify-items: flex-end;
+	overflow-x: auto;
+}
+.container-fname, .container-lname {
+	width: 20%;
+}
+.container-email {
+	width: 35%;
+}
+
+
+.small-image {
+	height: 60px;
+}
+
+.submit-row, .amount-row {
+    display: flex;
+    justify-content: flex-end;
+    margin: 1% 5%;
+    align-items: center;
+}
+
+.submit-left-column {
+	max-width: fit-content;
+	margin-right: 5px;
+}
+
+.submit-middle-column  {
+	width: 75%;
+}
+
+.submit-right-column {
+	display: flex;
+	justify-content: flex-end;
+	max-width: 20%;
+}
+
+.information-row label {
+	line-break: none;
+}
+
+.input-textarea {
+	height: 65px;
+	margin-bottom: 15px;
+	width: 100%;
+}
+
+.input-amount-label {
+	white-space: pre-wrap;
+}
+
+.input-amount {
+	margin-left: 5px;
+    font-size: large;
+    width: 60px;
+}
+
+
+
+@media (max-width: 1200px) {
+}
+@media (max-width: 992px) {
+	.ul-new-product {
+		height: 250px;
+	}
+}
+@media (max-width: 768px) {
+}
+
+@media (max-width: 576px) {
+}
+
+@media (max-width: 492px) {
+}
+@media (max-width: 392px) {
+}
+
+@media (max-width: 320px) {
+}

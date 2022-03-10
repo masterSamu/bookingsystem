@@ -1,0 +1,83 @@
+
+.button-container {
+    display: flex;
+    justify-self: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 5%;
+}
+
+.button-container a {
+    margin: 2% 2%;
+}
+
+.button-container p {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.dashbutton {
+    background-color: #B1BBFF;
+    border: 2px solid #000000;
+    border-radius: 12px;
+    height: 225px;
+    width: 225px;
+}
+
+.dashbutton-settings {
+    background-color: #FFF7B1;
+}
+
+.dashbutton svg {
+    opacity: 0.8;
+}
+
+.dashbutton svg:hover {
+    transition: transform 1s ease-in-out;
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+
+
+@media (max-width: 992px) {
+    .button-container p {
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+    .dashbutton {
+        height: 180px;
+        width: 180px;
+    }
+    .button-container svg {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+@media (max-width: 768px) {
+    .button-container {
+        justify-content: center;
+    }
+    .button-container p {
+        font-size: 1rem;
+        font-weight: bold;
+        line-height: 0.8rem;
+    }
+    .dashbutton {
+        height: 125px;
+        width: 125px;
+    }
+    .button-container svg {
+        width: 60px;
+        height: 60px;
+    }
+
+}
+
+@media (max-width: 320px) {
+    .button-container {
+        justify-content: center;
+    }
+}
