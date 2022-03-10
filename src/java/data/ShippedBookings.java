@@ -5,36 +5,31 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
-/**
- * Entity class for handeling Bookings for database.
- * 
- * @author Samu
- *
- */
 @Entity
-public class Bookings {
+public class ShippedBookings {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private int shippedbooking_id;
+	
 	private int booking_id;
-
 	private int customer_id;
 	private int product_id;
 	private int amount;
-	private boolean informed;
-	private String additionalInformation;
-
-	public Bookings() {
+	private String shippingdate;
+	
+	
+	
+	public ShippedBookings() {
 		super();
 	}
 
-	public Bookings(int booking_id, int customer_id, int product_id, int amount, boolean informed,
-			String additionalInformation) {
+	public ShippedBookings(int booking_id, int customer_id, int product_id, int amount, String shippingdate) {
 		super();
 		this.booking_id = booking_id;
 		this.customer_id = customer_id;
 		this.product_id = product_id;
 		this.amount = amount;
-		this.informed = informed;
+		this.shippingdate = shippingdate;
 	}
 
 	public int getBooking_id() {
@@ -69,27 +64,22 @@ public class Bookings {
 		this.amount = amount;
 	}
 
-	public boolean isInformed() {
-		return informed;
+	public String getShippingdate() {
+		return shippingdate;
 	}
 
-	public void setInformed(boolean informed) {
-		this.informed = informed;
-	}
-
-	public String getAdditionalInformation() {
-		return additionalInformation;
-	}
-
-	public void setAdditionalInformation(String additionalInformation) {
-		this.additionalInformation = additionalInformation;
+	public void setShippingdate(String shippingdate) {
+		this.shippingdate = shippingdate;
 	}
 
 	@Override
 	public String toString() {
-		return "Bookings [booking_id=" + booking_id + ", customer_id=" + customer_id + ", product_id=" + product_id
-				+ ", amount=" + amount + ", informed=" + informed + ", additionalInformation=" + additionalInformation
-				+ "]";
+		return "ShippedBookings [booking_id=" + booking_id + ", customer_id=" + customer_id + ", product_id=" + product_id
+				+ ", amount=" + amount + ", shippingdate=" + shippingdate + "]";
 	}
+	
+	
+	
+	
 
 }
