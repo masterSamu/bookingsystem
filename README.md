@@ -6,7 +6,7 @@ Application merge information from Product, Customer, Supplier and Booking to ea
 At the bookings page it is easy to filter bookings by searching with product, customer or supplier information.
 
 # Tech used
-- Java (Servlets, JPA, JSP, JSTL core tags)
+- Java (Servlet, JPA, JSP, JSTL core tags)
 - MySQL
 - JavaScript, JQuery, Ajax
 - HTML & CSS
